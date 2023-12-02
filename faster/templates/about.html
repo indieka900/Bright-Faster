@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %}
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">About</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">About</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid w-100" src="static/img/truck.jpg" alt="">
+                    <img class="img-fluid w-100" src="static/img/about.jpg" alt="">
+                    <div class="bg-primary text-dark text-center p-4">
+                        <h3 class="m-0">25+ Years Experience</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-primary text-uppercase font-weight-bold">About Us</h6>
+                    <h1 class="mb-4">Trusted & Faster Logistic Service Provider</h1>
+                    <p class="mb-4">Everything we do is to reliably meet that end for our customers. Our focus and vision moving forward is to continue to invest in the right people, technology, real estate, training, and infrastructure to ensure that we are the most dependable pool distributor for your freight.</p>
+                    <div class="d-flex align-items-center pt-2">
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-bold m-0 ml-4">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/feature.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/Aircargo.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/speedvan.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/store.jpg" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
+                    <h1 class="mb-4">Faster, Safe and Trusted Logistics Services</h1>
+                    <p class="mb-4">Experts in reducing customer freight spend · Superior customer service · In depth industry knowledge · Multiple value add services ·</p>
+                    <ul class="list-inline">
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Best In Industry</h6>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Emergency Services</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>24/7 Customer Support</h6></li>
+                    </ul>
+                    <a href="" class="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+    {% endblock %}
+
+    

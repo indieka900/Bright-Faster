@@ -1,0 +1,1 @@
+# Bright-Faster offers all shipping services, from small packages like documents and parcels to pallets, containers, and cargo. DHL offers logistics solutions, including warehousing, transport and distribution, and contract logistics. 

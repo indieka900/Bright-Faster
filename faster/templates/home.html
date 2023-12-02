@@ -1,0 +1,502 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %}
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-primary mb-4">Safe & Faster</h1>
+            <h1 class="text-white display-3 mb-5">Logistics Services</h1>
+            <div class="mx-auto" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Tracking Id">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary px-3" href="Account">Track & Trace</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid w-100" src="static/img/truck.jpg" alt="">
+                    <img class="img-fluid w-100" src="static/img/about.jpg" alt="">
+                    <div class="bg-primary text-dark text-center p-4">
+                        <h3 class="m-0">25+ Years Experience</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-primary text-uppercase font-weight-bold">About Us</h6>
+                    <h1 class="mb-4">Trusted & Faster Logistic Service Provider</h1>
+                    <p class="mb-4">We are a customer focused, customized solution, outside of the box team. We strive to provide clear and proactive communication to our clients everyday as they navigate the many variables of their supply chains. Above all else, we strive to be the most dependable pool distribution provider in the nation.</p>
+                    <div class="d-flex align-items-center pt-2">
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-bold m-0 ml-4">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!--  Quote Request Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
+                    <h1 class="mb-4">Request A Free Quote</h1>
+                    <p class="mb-4">Please provide details, including pricing, delivery timeline, and payment terms. Thank you in advance. </p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">225</h1>
+                            <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
+                            <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
+                            <h6 class="font-weight-bold mb-4">Complete Projects</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Customer's Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Origin" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Destination" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control border-0 p-4" placeholder="Phone Number" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Mode of Payment</option>
+                                    <option value="1">Cash Payment</option>
+                                    <option value="2">Bank Transfer</option>
+                                    <option value="3">Cheque Payment</option>
+                                </select>                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Select A Service</option>    
+                                    <option value="1">Air Freight</option>    
+                                    <option value="2">Ocean Freight</option>    
+                                    <option value="3">Land Transportation</option>    
+                                    <option value="4">Cargo Storage</option>
+                                    <option value="5">Air Freight & Cargo Storage</option>
+                                    <option value="6">Ocean Freight & Cargo Storage</option>
+                                    <option value="7">Land Transportation & Cargo Storage</option>
+                                    <option value="8">Air Freight & Land Transportation</option>
+                                    <option value="9">Ocean Freight & Land Transportation</option>
+                                    <option value="10">Land Transportation & Air Freight </option>
+                                    <option value="11">Land Transportation & Ocean Freight </option>
+                                    <option value="12">Land Transportation & Cargo Storage </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="c_order_notes" class="text-white">Order Notes</label>
+                                <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
+                              </div>
+                            <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Get A Quote</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Request Start -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Services</h6>
+                <h1 class="mb-4">Best Logistic Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-plane text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Air Freight</h6>
+                    </div>
+                    <p>Simplify air travel & shipping, Intermediary between airlines and passenger & cargo ...</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-ship text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Ocean Freight</h6>
+                    </div>
+                    <p>Ocean freight (or sea freight) is the most common form of transport for importers and exporters</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Land Transport</h6>
+                    </div>
+                    <p>Our land transport team can move any goods to any location. These experts get everything moving from one place to another by using their visionary planning and distribution.</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Cargo Storage</h6>
+                    </div>
+                    <p>Our storage service facilities, strategically located and temperature-controlled, will help you to safely store your raw materials and finished goods.</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/feature.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/Aircargo.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/speedvan.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="static/img/store.jpg" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
+                    <h1 class="mb-4">Faster, Safe and Trusted Logistics Services</h1>
+                    <p class="mb-4">Experts in reducing customer freight spend · Superior customer service · In depth industry knowledge · Multiple value add services ·</p>
+                    <ul class="list-inline">
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Best In Industry</h6>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Emergency Services</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>24/7 Customer Support</h6></li>
+                    </ul>
+                    <a href="" class="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Pricing Plan</h6>
+                <h1 class="mb-4">Affordable Pricing Packages</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <div class="bg-secondary">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted font-weight-medium" style="font-size: 10px; line-height: 45px;">KES</small>1,000<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Basic</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4">
+                            <p>Land Transport</p>
+                            <p>Cargo Storage</p>
+                            <p>Fragile items</p>
+                            <p>Truck</p>
+                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="bg-secondary">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted font-weight-medium" style="font-size: 10px; line-height: 45px;">KES</small>2,000<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Premium</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4">
+                            <p>Land/Ocean Transport</p>
+                            <p>Cargo Storage</p>
+                            <p>Non-fragile and Non-perishable items</p>
+                            <p>Van/Trucks/Ships</p>
+                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="bg-secondary">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                <small class="align-top text-muted font-weight-medium" style="font-size: 10px; line-height: 45px;">KES</small>3,000<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Business</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4">
+                            <p>Air/Ocean Transport</p>
+                            <p>Cargo Storage</p>
+                            <p>Perishable items and cargos</p>
+                            <p>Cargo tuffs/Air bus/Air Ships</p>
+                            <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Delivery Team</h6>
+                <h1 class="mb-4">Meet Our Delivery Team</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="static/img/team-1.jpg" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Elvis Bright</h5>
+                                <span>Pilot</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="static/img/team-2.jpg" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Ezra Paul</h5>
+                                <span>Captain</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="static/img/team-3.jpg" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Nickey Pope</h5>
+                                <span>Driver</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="static/img/team-4.jpg" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Gerald Scott</h5>
+                                <span>Fleet Manager</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+     <!-- Testimonial Start -->
+     <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Testimonial</h6>
+                <h1 class="mb-4">Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="static/img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Edith Paul</h6>
+                            <small>Doctor</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bright-Faster Logistics has an amazing staff. They always take the time to answer my calls, text and emails.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="static/img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Selfine Paul</h6>
+                            <small>Human Resource Manager</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bright-Faster Logistics has an amazing staff. They always take the time to answer my calls, text and emails.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="static/img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Amos Paul</h6>
+                            <small>Teacher</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bright-Faster Logistics has an amazing staff. They always take the time to answer my calls, text and emails.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="static/img/testimonial-4.jpg" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Everlyne Paul</h6>
+                            <small>Lawyer</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bright-Faster Logistics has an amazing staff. They always take the time to answer my calls, text and emails.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Blog</h6>
+                <h1 class="mb-4">Latest From Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="static/img/blog-1.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="static/img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">Princess Arianna Arya</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Web Design and Development</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Review on Design and SEO</h4>
+                        <p>Great, personal service from the customer service team. Communication is great, all the way through. Incredibly pleased with the service our company!!!</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="static/img/blog-2.jpg" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jun</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="static/img/user.jpg" alt="">
+                                <a class="text-muted ml-2" href="">Electrine Grande</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Advertisement</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Review on Advertisement</h4>
+                        <p>Great service regarding container scheduling and handling. Monitoring systems provide good transparency. Customization to our needs went was well executed.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    {% endblock  %}
+
+    
